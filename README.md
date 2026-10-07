@@ -1,3 +1,5 @@
+Official repository is now https://github.com/BuonOmo/fast-polylines, the project is maintained there feel free to open [issues](https://github.com/BuonOmo/fast-polylines/issues) or [pull requests](https://github.com/BuonOmo/fast-polylines/pulls)
+
 # Fast Polylines
 
 [![Gem](https://img.shields.io/gem/v/fast-polylines)](https://rubygems.org/gems/fast-polylines)
