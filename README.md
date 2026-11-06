@@ -2,6 +2,7 @@
 
 [![Gem](https://img.shields.io/gem/v/fast-polylines)](https://rubygems.org/gems/fast-polylines)
 [![Continuous Integration Status](https://github.com/klaxit/fast-polylines/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/klaxit/fast-polylines/actions?query=workflow%3A%22Continuous+Integration%22)
+[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://app.codspeed.io/BuonOmo/fast-polylines?utm_source=badge)
 
 Implementation of the [Google polyline algorithm][algorithm].
 

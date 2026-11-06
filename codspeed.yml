@@ -1,0 +1,38 @@
+$schema: https://raw.githubusercontent.com/CodSpeedHQ/codspeed/refs/heads/main/schemas/codspeed.schema.json
+
+# Benchmarks run by CodSpeed. Build the C extension first with `make ext`, then
+# run them locally with `codspeed run -m walltime`.
+# Scenarios are defined in perf/codspeed.rb.
+
+options:
+  warmup-time: 1s
+  max-time: 5s
+
+benchmarks:
+  - name: encode short route (35 points)
+    id: encode_short
+    exec: ruby -I lib -I ext perf/codspeed.rb encode_short
+
+  - name: decode short route (35 points)
+    id: decode_short
+    exec: ruby -I lib -I ext perf/codspeed.rb decode_short
+
+  - name: encode long route (10k points)
+    id: encode_long
+    exec: ruby -I lib -I ext perf/codspeed.rb encode_long
+
+  - name: decode long route (10k points)
+    id: decode_long
+    exec: ruby -I lib -I ext perf/codspeed.rb decode_long
+
+  - name: encode long route (10k points, precision 6)
+    id: encode_long_precision_6
+    exec: ruby -I lib -I ext perf/codspeed.rb encode_long_precision_6
+
+  - name: decode long route (10k points, precision 6)
+    id: decode_long_precision_6
+    exec: ruby -I lib -I ext perf/codspeed.rb decode_long_precision_6
+
+  - name: encode then decode long route (10k points)
+    id: roundtrip_long
+    exec: ruby -I lib -I ext perf/codspeed.rb roundtrip_long
